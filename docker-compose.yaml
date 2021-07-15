@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  application:
+    image: elixir:1.12-alpine
+    volumes:
+    - .:/srv/app
+    working_dir: /srv/app
+    command: sleep infinity
